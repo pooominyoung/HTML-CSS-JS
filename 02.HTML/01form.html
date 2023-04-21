@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="test.jsp" method="get">
+        <div> 
+            <label for="username"> 이름 :</label> <input type="text"  name="username" id="username"/>
+         </div>
+       <div>
+        <label for="userage">나이 :</label> <input type="text"  name="userage" id="userage"/>
+       </div>
+        <div>
+            <label for="useraddr">주소 :</label> <input type="text"  name="useraddr" id="useraddr"/> 
+        </div>
+        <div>
+            <label for="usermail">메일 :</label> <input type="email" name="usermail" id="usermail"/> 
+        </div>
+        <div>
+            <label for="gender">성별 :</label> <input type="radio" name="gender" value="man"/> 남 <input type="radio" name="gender" value="woman"  /> 여
+        </div>
+        <div>
+            <label for="hobby">취미 :</label> 
+            <div>
+                <input type="checkbox" name="hobby" value="climbing">등산&nbsp;
+                <input type="checkbox" name="hobby" value="golf">골프&nbsp;
+                <input type="checkbox" name="hobby" value="swmming">수영&nbsp;
+                <input type="checkbox" name="hobby" value="reading">독서&nbsp;
+            </div>
+        </div>
+         <div> 
+             <label for="memo">메모 :</label>
+             <textarea cols="35" rows="15" name="memo" style="resize: none;"></textarea>
+         </div>
+       
+      
+        <div>
+           <label for="tn-ln"> T.N : </label> 
+           <div>
+            <select name="tn-ln">
+                <option value="053">053</option>
+                <option value="055">055</option>
+                <option value="02" selected>02</option>
+            </select>
+            <span> - </span>
+            <input type="tel" />
+            <span> - </span>
+            <input type="tel" />
+            </div>
+        </div>
+       
+       
+        <input type="submit" />
+    </form>
+
+</body>
+</html>
